@@ -1,105 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Techs IT Solutions</title>
+    <style>
+        body {
+            background-color: #000033; /* Dark blue, similar to the image */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+
+        .logo-container {
+            /* You can replace this with an actual SVG or image for the logo */
+            width: 100px; /* Adjust size as needed */
+            height: 100px;
+            border: 2px solid #00ffff; /* Example for a placeholder logo */
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #00ffff;
+            background: linear-gradient(45deg, #00ffff, #0033cc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 0;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #00ffff;
+            font-weight: normal;
+            margin-top: 5px;
+        }
+
+        .heading-services {
+            font-size: 3em;
+            font-weight: bold;
+            color: #add8e6; /* Light blue */
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #00004d; /* Slightly lighter dark blue */
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #000066;
+            text-align: left;
+        }
+
+        .service-icon {
+            font-size: 2em;
+            color: #00ffff;
+            margin-right: 15px;
+        }
+
+        .service-text {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-white">
-  <header class="bg-gray-800 p-6">
-    <div class="container mx-auto flex justify-between items-center">
-      <img src="logo.png" alt="X-TECHS Logo" class="h-16">
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="#services" class="hover:text-blue-400">Services</a></li>
-          <li><a href="#order" class="hover:text-blue-400">Order</a></li>
-          <li><a href="#appointments" class="hover:text-blue-400">Appointments</a></li>
-          <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
-        </ul>
-      </nav>
+<body>
+
+    <div class="header">
+        <div class="logo-container">X</div>
+        <h1>X-TECHS</h1>
+        <h2>IT SOLUTIONS</h2>
     </div>
-  </header>
 
-  <section class="text-center py-12 bg-gradient-to-b from-gray-800 to-gray-900">
-    <h1 class="text-4xl font-bold mb-4">Welcome to X-TECHS IT Solutions</h1>
-    <p class="text-lg">Your local hub for computer and phone repairs, IT support, and screen replacements.</p>
-  </section>
+    <h2 class="heading-services">WHAT WE OFFER</h2>
 
-  <section id="services" class="py-12 container mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-center">Our Services</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h3 class="text-xl font-semibold">Screen Repairs & Replacements</h3>
-        <p>We replace screens for Huawei, Samsung, Honor and more, starting at just R100.</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h3 class="text-xl font-semibold">Device Health Diagnosis</h3>
-        <p>Quick health checks for phones, laptops, and PCs to prevent damage and data loss.</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h3 class="text-xl font-semibold">Software Installation</h3>
-        <p>Windows, Avast Premium, Microsoft Office — full starter packs available.</p>
-      </div>
+    <div class="services-grid">
+        <div class="service-item">
+            <span class="service-icon">&#9743;</span> <span class="service-text">Screen Replacement</span>
+        </div>
+        <div class="service-item">
+            <span class="service-icon">&#9999;</span> <span class="service-text">Logo Design</span>
+        </div>
+        <div class="service-item">
+            <span class="service-icon">&#9766;</span> <span class="service-text">Laptop Repairs</span>
+        </div>
+        <div class="service-item">
+            <span class="service-icon">&#128273;</span> <span class="service-text">Phone Unlocking</span>
+        </div>
+        <div class="service-item">
+            <span class="service-icon">&#9878;</span> <span class="service-text">PC Diagnostics</span>
+        </div>
+        <div class="service-item">
+            <span class="service-icon">&#9633;</span> <span class="service-text">System Setup</span>
+        </div>
+        <div class="service-item">
+            <span class="service-icon">&#9776;</span> <span class="service-text">Software Installation</span>
+        </div>
+        <div class="service-item">
+            <span class="service-icon">&#127760;</span> <span class="service-text">Website Development</span>
+        </div>
     </div>
-  </section>
 
-  <section id="order" class="py-12 bg-gray-800">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-6">Order Screens & Accessories</h2>
-      <form class="max-w-xl mx-auto space-y-4">
-        <input type="text" placeholder="Full Name" class="w-full p-3 rounded bg-gray-700 text-white">
-        <input type="text" placeholder="Phone Model (e.g., Samsung A32)" class="w-full p-3 rounded bg-gray-700 text-white">
-        <input type="text" placeholder="Order Item (e.g., Screen, Protector)" class="w-full p-3 rounded bg-gray-700 text-white">
-        <input type="number" placeholder="Quantity" class="w-full p-3 rounded bg-gray-700 text-white">
-        <div id="paypal-button-container" class="my-4"></div>
-        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 p-3 rounded font-bold">Place Order</button>
-      </form>
-    </div>
-  </section>
-
-  <section id="appointments" class="py-12 container mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-6">Set an Appointment</h2>
-    <form class="max-w-xl mx-auto space-y-4">
-      <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-700 text-white">
-      <input type="email" placeholder="Email Address" class="w-full p-3 rounded bg-gray-700 text-white">
-      <input type="date" class="w-full p-3 rounded bg-gray-700 text-white">
-      <input type="time" class="w-full p-3 rounded bg-gray-700 text-white">
-      <textarea placeholder="Service Needed" class="w-full p-3 rounded bg-gray-700 text-white"></textarea>
-      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 p-3 rounded font-bold">Book Appointment</button>
-    </form>
-  </section>
-
-  <section id="contact" class="py-12 bg-gray-900">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-      <p>📞 Phone: 060 721 7749</p>
-      <p>📧 Email: Xcu63@outlook.com</p>
-      <p>📍 Address: Driekop, Ga-Mathipa, next to Laduma Hardware, Burgersfort</p>
-    </div>
-  </section>
-
-  <footer class="bg-gray-800 p-4 text-center">
-    <p>&copy; 2025 X-TECHS IT Solutions. All rights reserved.</p>
-  </footer>
-
-  <script>
-    paypal.Buttons({
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{
-            amount: {
-              value: '100.00' // Example amount, change dynamically as needed
-            }
-          }]
-        });
-      },
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-          alert('Payment successful by ' + details.payer.name.given_name);
-        });
-      }
-    }).render('#paypal-button-container');
-  </script>
 </body>
 </html>
+
