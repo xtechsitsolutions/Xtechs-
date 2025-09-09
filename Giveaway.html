@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-TECHS Competition</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #4b0082;
+    }
+    .prizes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    .prize {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 200px;
+    }
+    .prize img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    button {
+      background: #4b0082;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #360062;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 X-TECHS Big Giveaway 🎉</h1>
+  <p>Invite your friends to increase your chances of winning amazing prizes!</p>
+
+  <div class="prizes">
+    <div class="prize">
+      <img src="airpods.png" alt="AirPods">
+      <h3>Apple AirPods</h3>
+    </div>
+    <div class="prize">
+      <img src="chargers.png" alt="Chargers">
+      <h3>Fast Chargers</h3>
+    </div>
+    <div class="prize">
+      <img src="screen_protectors.png" alt="Screen Protector">
+      <h3>Screen Protectors</h3>
+    </div>
+  </div>
+
+  <button onclick="shareLink()">Invite Friends</button>
+
+  <script>
+    function shareLink() {
+      const referralLink = "https://x-techs.co.za/competition"; // Replace with your actual link
+      navigator.clipboard.writeText(referralLink);
+      alert("Referral link copied! Share with your friends.");
+    }
+  </script>
+</body>
+</html>
