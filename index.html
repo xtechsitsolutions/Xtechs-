@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2105503257991701"
-     crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2105503257991701" crossorigin="anonymous"></script>
   <script defer data-domain="x-techs.co.za" src="https://plausible.io/js/script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional computer, laptop, phone repairs and IT support in South Africa. Fast screen replacements, data recovery & more.">
+  <meta name="keywords" content="laptop repair, phone repair, screen replacement, data recovery, IT support, computer repair, South Africa">
   <title>X-TECHS IT Solutions</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  
   <style>
     :root {
       --color-primary-blue: #00A9FF;
@@ -19,15 +21,11 @@
       --font-primary: 'Montserrat', sans-serif;
     }
 
-    body {
-      font-family: var(--font-primary);
-    }
-
+    body { font-family: var(--font-primary); }
     .bg-custom-dark { background-color: var(--color-dark-bg); }
     .bg-custom-light { background-color: var(--color-light-bg); }
     .text-primary-blue { color: var(--color-primary-blue); }
     .border-primary-blue { border-color: var(--color-primary-blue); }
-    .hover\:bg-primary-blue-dark:hover { background-color: #008ecc; }
 
     .service-card {
       background-color: var(--color-light-bg);
@@ -50,19 +48,11 @@
       box-shadow: 0 0 5px var(--color-primary-blue);
     }
 
-    /* Animations */
-    @keyframes fade-in-down { 
-      from { opacity: 0; transform: translateY(-20px); } 
-      to { opacity: 1; transform: translateY(0); } 
-    }
-    @keyframes fade-in-up { 
-      from { opacity: 0; transform: translateY(20px); } 
-      to { opacity: 1; transform: translateY(0); } 
-    }
+    @keyframes fade-in-down { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fade-in-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     .animate-fade-in-down { animation: fade-in-down 1s ease forwards; }
     .animate-fade-in-up { animation: fade-in-up 1s ease forwards; }
 
-    /* Background with circuit board image */
     .terminal-bg {
       background: url('1a5c12aaf50b8dcf17b48b180e271123.jpg') center center / cover no-repeat;
       position: relative;
@@ -71,12 +61,9 @@
       content: "";
       position: absolute;
       top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(10, 15, 30, 0.7); /* dark overlay for readability */
+      background: rgba(10, 15, 30, 0.75);
     }
-    .terminal-content {
-      position: relative;
-      z-index: 2;
-    }
+    .terminal-content { position: relative; z-index: 2; }
   </style>
 </head>
 <body class="bg-custom-dark text-white">
@@ -101,23 +88,33 @@
         </svg>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden mt-4">
-      <a href="#services" class="block py-2 px-4 text-sm hover:bg-gray-700">Services</a>
-      <a href="#order" class="block py-2 px-4 text-sm hover:bg-gray-700">Order</a>
-      <a href="#appointments" class="block py-2 px-4 text-sm hover:bg-gray-700">Appointments</a>
-      <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
-      <li><a href="Giveaway.html" class="hover:text-primary-blue transition duration-300">Tech Boost Giveaways</a></li>
-    <a href="Pricelist.html" class="hover:text-primary-blue transition duration-300">Price list</a></li>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 bg-custom-light rounded-lg py-4">
+      <ul class="flex flex-col">
+        <li><a href="#services" class="block py-3 px-6 hover:bg-gray-700 hover:text-primary-blue">Services</a></li>
+        <li><a href="#order" class="block py-3 px-6 hover:bg-gray-700 hover:text-primary-blue">Order</a></li>
+        <li><a href="#appointments" class="block py-3 px-6 hover:bg-gray-700 hover:text-primary-blue">Appointments</a></li>
+        <li><a href="#contact" class="block py-3 px-6 hover:bg-gray-700 hover:text-primary-blue">Contact</a></li>
+        <li><a href="pricelist.html" class="block py-3 px-6 hover:bg-gray-700 hover:text-primary-blue">Pricelist</a></li>
+        <li><a href="xtechsitsolutions.github.io/Xtechs-competition/" class="block py-3 px-6 hover:bg-gray-700 hover:text-primary-blue">Tech Boost Giveaways</a></li>
+      </ul>
     </div>
   </header>
 
-  <!-- Hero Section with Circuit Board Background -->
+  <!-- Hero Section -->
   <section class="text-center py-20 px-4 terminal-bg">
-    <div class="terminal-content">
+    <div class="terminal-content max-w-4xl mx-auto">
       <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-down">Welcome to X-TECHS IT Solutions</h1>
       <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-up">
         Your local hub for computer and phone repairs, IT support, and top-quality screen replacements.
       </p>
+      <div class="mt-10">
+        <a href="#order" 
+           class="inline-block bg-primary-blue hover:bg-[#008ecc] text-white font-semibold px-10 py-4 rounded-xl text-lg transition duration-300">
+          Place an Order Now →
+        </a>
+      </div>
     </div>
   </section>
 
@@ -126,42 +123,35 @@
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
         <div class="service-card text-center">
           <img src="laptop.png" alt="Laptop Repairs" class="h-20 mx-auto mb-4">
           <h3 class="text-2xl font-bold mb-3 text-primary-blue">Computer & Laptop Repairs</h3>
           <p class="text-gray-400">From software troubleshooting to hardware fixes, we get your PC or Mac running smoothly.</p>
         </div>
-        
         <div class="service-card text-center">
           <img src="phone.png" alt="Phone Repairs" class="h-20 mx-auto mb-4">
           <h3 class="text-2xl font-bold mb-3 text-primary-blue">Phone Repairs</h3>
           <p class="text-gray-400">Cracked screens, battery issues, and more. We service a wide range of smartphone models.</p>
         </div>
-        
         <div class="service-card text-center">
           <img src="cables.png" alt="Cables & Accessories" class="h-20 mx-auto mb-4">
           <h3 class="text-2xl font-bold mb-3 text-primary-blue">Cables & Accessories</h3>
           <p class="text-gray-400">Quality chargers, cables, and accessories to keep your devices connected and powered.</p>
         </div>
-
         <div class="service-card text-center">
           <img src="cameras.png" alt="Cameras" class="h-20 mx-auto mb-4">
           <h3 class="text-2xl font-bold mb-3 text-primary-blue">Cameras & Security</h3>
           <p class="text-gray-400">Setup, repairs, and installation of cameras for home or business security systems.</p>
         </div>
-        
         <div class="service-card text-center">
           <img src="special.png" alt="Special Services" class="h-20 mx-auto mb-4">
           <h3 class="text-2xl font-bold mb-3 text-primary-blue">Special Services</h3>
           <p class="text-gray-400">Custom IT solutions, AI integration, and tailored support for unique client needs.</p>
         </div>
-
         <div class="service-card text-center">
           <h3 class="text-2xl font-bold mb-3 text-primary-blue">Data Recovery</h3>
           <p class="text-gray-400">Lost important files? We offer data recovery services to retrieve your valuable data.</p>
         </div>
-
       </div>
     </div>
   </section>
@@ -192,17 +182,34 @@
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6 text-primary-blue">Contact Us</h2>
       <p class="text-gray-400">We’d love to hear from you! Reach us via:</p>
-      <ul class="mt-4 space-y-2 text-gray-300">
-        <li>Email: <a href="mailto:info@x-techs.co.za" class="text-primary-blue hover:underline">@x-techs.co.za</a></li>
-        <li>Phone: <a href="tel:+27123456789" class="text-primary-blue hover:underline">+27 636 165 200</a></li>
-        <li>Address: Remote online,South Africa</li>
+      <ul class="mt-6 space-y-3 text-gray-300">
+        <li>Email: <a href="mailto:info@x-techs.co.za" class="text-primary-blue hover:underline">info@x-techs.co.za</a></li>
+        <li>Phone: <a href="tel:+27636165200" class="text-primary-blue hover:underline">+27 636 165 200</a></li>
+        <li>Address: Remote online, South Africa</li>
       </ul>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-custom-dark p-4 text-center">
-    <p class="text-gray-500">&copy; 2025 X-TECHS IT Solutions. All rights reserved.</p>
+  <footer class="bg-custom-dark p-6 text-center">
+    <p class="text-gray-500">&copy; 2026 X-TECHS IT Solutions. All rights reserved.</p>
   </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/27636165200" 
+     target="_blank"
+     class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center z-50 transition">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-8 h-8">
+  </a>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
